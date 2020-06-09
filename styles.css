@@ -1,0 +1,78 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: red;
+    position: relative;
+}
+
+.swooshWrapper {
+    z-index: 10000;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(38, 35, 66, 0.33);
+}
+
+.swoosh {
+    overflow-y: visible;
+    position: absolute;
+    height: 100%;
+    max-height: 100%;
+    background: white;
+    width: 40%;
+    max-width: 480px;
+    min-width: 240px;
+    bottom: 0;
+    right: 0;
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+}
+
+.swooshHeader {
+    padding: 12px;
+    background-color: red;
+}
+
+.swooshHeader > h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+.swooshHeader > span {
+    float: right;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.swooshContent {
+    flex: 1;
+    padding: 12px;
+}
+
+.swooshFooter {
+    padding: 12px;
+    background: blue;
+}
+
+.is-hidden {
+    right: -520px;
+}
+
+.btn {
+    background: #00eeff;
+    border: 0 none;
+    border-radius: 50px;
+    padding: 12px;
+}
+
+.p {
+    padding: 12px;
+}
