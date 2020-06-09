@@ -1,1 +1,3 @@
-console.log('hello world', $);
+$(".showSwoosh").click(function() {
+  $(".swooshWrapper").toggleClass("is-hidden");
+});
