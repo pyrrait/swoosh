@@ -2,34 +2,32 @@
 <html lang="nb-NO">
 <head>
   <title>Swoosh</title>
-  <script src="jquery.js"></script>
-  <script src="scripts.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-  <button class="btn showSwoosj">Show Swoosh</button>
+  <button class="btn showSwoosh">Show Swoosh</button>
 
-
-  <div class="swooshWrapper is-hidden">
+  <div id="swooshWrapper">
 
     <div class="swoosh">
 
       <header class="swooshHeader">
-        <h1>Swoosj</h1>
-        <span class="showSwoosh">×</span>
+        <h1>Swoosh</h1>
       </header>
 
       <div class="swooshContent">
-        <p>This is the swoosj content</p>
+        <p>This is the swoosh content</p>
       </div>
 
       <footer class="swooshFooter">
-        <button class="btn">Click me!</button>
+        <button class="btn hideSwoosh">click to close!</button>
       </footer>
     </div>
 
   </div>
+
+  <script src="scripts.js"></script>
 
 </body>
 </html>
